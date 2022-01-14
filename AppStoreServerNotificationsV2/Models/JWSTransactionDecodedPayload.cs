@@ -1,0 +1,3 @@
+﻿namespace AppStoreServerNotificationsV2.Models;
+
+public record JWSTransactionDecodedPayload(DateTimeOffset ExpiresDate, long OriginalTransactionId);

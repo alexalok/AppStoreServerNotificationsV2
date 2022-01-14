@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+	<PropertyGroup>
+		<Version>0.1.0</Version>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>alexalok</Authors>
+		<Description>App Store Server Notifications V2 for .NET</Description>
+		<Copyright>Copyright (c) alexalok 2022</Copyright>
+		<PackageProjectUrl>https://github.com/alexalok/AppStoreServerNotificationsV2</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/alexalok/AppStoreServerNotificationsV2</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>appstore server notifications v2</PackageTags>
+		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="InternalsVisibleTo.MSBuild" Version="1.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleToSuffix Include=".Tests" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Converters\" />
+	</ItemGroup>
+</Project>

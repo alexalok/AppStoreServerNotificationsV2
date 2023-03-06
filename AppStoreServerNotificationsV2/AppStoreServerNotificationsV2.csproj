@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>0.2.0</Version>
+		<Version>0.3.0</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
@@ -16,6 +16,9 @@
 		<PackageTags>appstore server notifications v2</PackageTags>
 		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageReleaseNotes>
+			* Added JWSTransactionDecodedPayload.OriginalPurchaseDate prop
+		</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -29,8 +32,5 @@
 	<ItemGroup>
 		<InternalsVisibleToSuffix Include=".Tests" />
 	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Converters\" />
-	</ItemGroup>
+	
 </Project>

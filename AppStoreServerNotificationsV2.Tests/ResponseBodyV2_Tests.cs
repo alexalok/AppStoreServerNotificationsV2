@@ -30,6 +30,7 @@ namespace AppStoreServerNotificationsV2.Tests
 
             // Assert
             Assert.Equal("com.example.app", decoded.Data.BundleId);
+            Assert.Equal(new DateTimeOffset(637767355230000000, TimeSpan.Zero), decoded.Data.SignedTransactionInfo.OriginalPurchaseDate);
             Assert.Equal(new DateTimeOffset(637777503980000000, TimeSpan.Zero), decoded.Data.SignedTransactionInfo.PurchaseDate);
         }
     }

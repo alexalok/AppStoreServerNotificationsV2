@@ -1,28 +1,27 @@
-﻿using System.Text.Json;
-using AppStoreServerNotificationsV2.Models;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Text.Json;
 using System.Text.Json.Serialization;
-using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.JsonWebTokens;
+using AppStoreServerNotificationsV2.Models;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AppStoreServerNotificationsV2.Converters;
 
 class JWSTransactionDecodedPayloadConverter : JsonConverter<JWSTransactionDecodedPayload>
 {
+    internal static readonly JsonSerializerOptions JsonSerializerOptions = new()
+    {
+        PropertyNameCaseInsensitive = true,
+        NumberHandling = JsonNumberHandling.AllowReadingFromString,
+        Converters = { new TimestampToDateTimeOffsetConverter() }
+    };
+
     public override JWSTransactionDecodedPayload? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         var rawJws = reader.GetString();
         var handler = new JwtSecurityTokenHandler();
         var jwt = handler.ReadJwtToken(rawJws);
         var payloadJson = Base64UrlEncoder.Decode(jwt.RawPayload);
-        var opt = new JsonSerializerOptions()
-        {
-            PropertyNameCaseInsensitive = true,
-            NumberHandling =
-                JsonNumberHandling.AllowReadingFromString
-        };
-        opt.Converters.Add(new TimestampToDateTimeOffsetConverter());
-        var payload = JsonSerializer.Deserialize<JWSTransactionDecodedPayload>(payloadJson, opt);
+        var payload = JsonSerializer.Deserialize<JWSTransactionDecodedPayload>(payloadJson, JsonSerializerOptions);
         return payload;
     }
 
@@ -30,5 +29,4 @@ class JWSTransactionDecodedPayloadConverter : JsonConverter<JWSTransactionDecode
     {
         throw new NotImplementedException();
     }
-
 }

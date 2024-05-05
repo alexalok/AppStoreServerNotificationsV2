@@ -1,0 +1,18 @@
+{
+  "transactionId": "1000000831360853",
+  "originalTransactionId": "1000000806937552",
+  "webOrderLineItemId": "1000000063561721",
+  "bundleId": "com.adapty.sample_app",
+  "productId": "basic_subscription_1_month",
+  "subscriptionGroupIdentifier": "27636320",
+  "purchaseDate": 1624446341000,
+  "originalPurchaseDate": 1619686337000,
+  "expiresDate": 1624446641000,
+  "quantity": 1,
+  "type": "Auto-Renewable Subscription",
+  "appAccountToken": "fd12746f-2d3a-46c8-bff8-55b75ed06aca",
+  "inAppOwnershipType": "PURCHASED",
+  "signedDate": 1624446484882,
+  "offerType": 2,
+  "offerIdentifier": "basic_subscription_1_month.pay_as_you_go.3_months"
+}

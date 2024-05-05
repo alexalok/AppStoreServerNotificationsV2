@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>0.4.0</Version>
+		<Version>0.4.1</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
@@ -9,7 +9,7 @@
 	<PropertyGroup>
 		<Authors>alexalok</Authors>
 		<Description>App Store Server Notifications V2 for .NET</Description>
-		<Copyright>Copyright (c) alexalok 2022</Copyright>
+		<Copyright>Copyright (c) alexalok 2022-2024</Copyright>
 		<PackageProjectUrl>https://github.com/alexalok/AppStoreServerNotificationsV2</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/alexalok/AppStoreServerNotificationsV2</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
@@ -17,8 +17,7 @@
 		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>
-			* Added an ability to get a decoded raw payload (as a string).
-			* Fixed JsonSerializerOptions not being cached between Decode() invocations.
+			* Added 'OfferType' (https://developer.apple.com/documentation/appstoreservernotifications/offertype)
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

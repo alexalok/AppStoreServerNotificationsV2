@@ -2,4 +2,4 @@
 
 public record JWSTransactionDecodedPayload(
     DateTimeOffset OriginalPurchaseDate, DateTimeOffset PurchaseDate, DateTimeOffset ExpiresDate,
-    long OriginalTransactionId, OfferType? OfferType, string ProductId);
+    long OriginalTransactionId, OfferType? OfferType, string ProductId, long TransactionId);

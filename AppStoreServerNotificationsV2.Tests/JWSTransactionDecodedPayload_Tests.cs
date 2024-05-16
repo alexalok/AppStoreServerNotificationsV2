@@ -18,5 +18,6 @@ public class JWSTransactionDecodedPayload_Tests
         // Assert
         Assert.Equal(OfferType.PromotionalOffer, payload.OfferType);
         Assert.Equal("basic_subscription_1_month", payload.ProductId);
+        Assert.Equal(1000000831360853, payload.TransactionId);
     }
 }

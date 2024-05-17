@@ -14,5 +14,11 @@
   "inAppOwnershipType": "PURCHASED",
   "signedDate": 1624446484882,
   "offerType": 2,
-  "offerIdentifier": "basic_subscription_1_month.pay_as_you_go.3_months"
+  "offerIdentifier": "basic_subscription_1_month.pay_as_you_go.3_months",
+  "price": 2990,
+  "currency": "USD",
+  "storefront": "USA",
+  "environment": "Sandbox",
+  "isUpgraded": false,
+  "storefrontId": "12"
 }

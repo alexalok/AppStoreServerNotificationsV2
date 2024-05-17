@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>0.4.1</Version>
+		<Version>0.4.2</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
@@ -17,7 +17,7 @@
 		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>
-			* Added 'OfferType' (https://developer.apple.com/documentation/appstoreservernotifications/offertype)
+			* Added 'ProductId' and 'TransactionId'
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

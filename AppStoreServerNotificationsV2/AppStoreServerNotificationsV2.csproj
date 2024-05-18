@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>0.4.2</Version>
+		<Version>0.4.3</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
@@ -17,7 +17,7 @@
 		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>
-			* Added 'ProductId' and 'TransactionId'
+			* added price, currency, storefront, environment, isUpgraded, storefrontId to JWSTransaction
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

@@ -73,5 +73,10 @@ public enum NotificationType
     /// <summary>
     /// A notification type that along with its subtype indicates that the user subscribed to a product.
     /// </summary>
-    SUBSCRIBED
+    SUBSCRIBED,
+    
+    /// <summary>
+    /// A notification type that along with its subtype indicates that the notification is a test notification.
+    /// </summary>
+    TEST
 }

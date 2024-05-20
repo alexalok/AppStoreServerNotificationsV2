@@ -17,5 +17,5 @@ jobs:
 
       - name: Publish to NuGet
         run: |
-          dotnet pack -c Release --include-source --include-symbols --nologo -o ./packed
+          dotnet pack AppStoreServerNotificationsV2 -c Release --include-source --include-symbols --nologo -o ./packed
           dotnet nuget push "./packed/*" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json

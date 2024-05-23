@@ -1,0 +1,16 @@
+{
+  "autoRenewProductId": "com.example.autorenew",
+  "autoRenewStatus": 1,
+  "environment": "Production",
+  "expirationIntent": 2,
+  "gracePeriodExpiresDate": 1624446641000,
+  "isInBillingRetryPeriod": true,
+  "offerIdentifier": "offer_123",
+  "offerType": 1,
+  "originalTransactionId": "1000000123456789",
+  "priceIncreaseStatus": 0,
+  "productId": "com.example.product",
+  "recentSubscriptionStartDate": 1624446641000,
+  "renewalDate": 1624446641000,
+  "signedDate": 1624446641000
+}

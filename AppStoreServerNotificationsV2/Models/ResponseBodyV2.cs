@@ -1,7 +1,6 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization;
-using Microsoft.IdentityModel.Tokens;
+using JWT.Builder;
 
 namespace AppStoreServerNotificationsV2.Models;
 
@@ -13,6 +12,9 @@ public record ResponseBodyV2([property: JsonPropertyName("signedPayload")] strin
         Converters = { new JsonStringEnumConverter() },
     };
 
+    static readonly JwtBuilder JwtReader = JwtBuilder.Create().DoNotVerifySignature();
+
+
     public ResponseBodyV2DecodedPayload Decode()
     {
         var rawPayload = GetDecodedRawPayload();
@@ -22,9 +24,7 @@ public record ResponseBodyV2([property: JsonPropertyName("signedPayload")] strin
 
     public string GetDecodedRawPayload()
     {
-        var handler = new JwtSecurityTokenHandler();
-        var outerJwt = handler.ReadJwtToken(SignedPayload);
-        var payloadJson = Base64UrlEncoder.Decode(outerJwt.RawPayload);
+        var payloadJson = JwtReader.Decode(SignedPayload);
         return payloadJson;
     }
 }

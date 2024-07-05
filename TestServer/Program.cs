@@ -1,4 +1,3 @@
-using System.IdentityModel.Tokens.Jwt;
 using AppStoreServerNotificationsV2.Models;
 using Microsoft.AspNetCore.Mvc;
 

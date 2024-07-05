@@ -1,6 +1,5 @@
-﻿using AppStoreServerNotificationsV2.Converters;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
+using AppStoreServerNotificationsV2.Converters;
 
 namespace AppStoreServerNotificationsV2.Models;
 

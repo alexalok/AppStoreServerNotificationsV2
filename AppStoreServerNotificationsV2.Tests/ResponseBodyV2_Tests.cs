@@ -1,17 +1,11 @@
 using System.Text.Json;
 using AppStoreServerNotificationsV2.Models;
-using Microsoft.IdentityModel.Logging;
 using Xunit;
 
 namespace AppStoreServerNotificationsV2.Tests
 {
     public class ResponseBodyV2_Tests
     {
-        public ResponseBodyV2_Tests()
-        {
-            IdentityModelEventSource.ShowPII = true;
-        }
-
         [Fact]
         public void Ensure_Decode_Decodes_Sandbox_Resubscription()
         {

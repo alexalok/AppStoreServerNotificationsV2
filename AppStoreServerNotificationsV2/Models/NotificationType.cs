@@ -44,7 +44,12 @@ public enum NotificationType
     /// A notification type that along with its subtype indicates that the user redeemed a promotional offer or offer code.
     /// </summary>
     OFFER_REDEEMED,
-
+    
+    /// <summary>
+    /// A notification type that indicates the customer purchased a consumable, non-consumable, or non-renewing subscription. The App Store also sends this notification when the customer receives access to a non-consumable product through Family Sharing.
+    /// </summary>
+    ONE_TIME_CHARGE,
+    
     /// <summary>
     /// A notification type that along with its subtype indicates that the system has informed the user of a subscription price increase.
     /// </summary>

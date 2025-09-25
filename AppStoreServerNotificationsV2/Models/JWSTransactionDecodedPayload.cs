@@ -3,4 +3,5 @@
 public record JWSTransactionDecodedPayload(
     DateTimeOffset OriginalPurchaseDate, DateTimeOffset PurchaseDate, DateTimeOffset ExpiresDate,
     long OriginalTransactionId, OfferType? OfferType, string ProductId, long TransactionId, 
-    long Price, string Currency, string Storefront, string Environment, bool IsUpgraded, string StorefrontId);
+    long Price, string Currency, string Storefront, string Environment, bool IsUpgraded, string StorefrontId,
+    string InAppOwnershipType, string? AppAccountToken, string? AppTransactionId);

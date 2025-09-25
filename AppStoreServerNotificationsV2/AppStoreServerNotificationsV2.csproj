@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>0.6.0</Version>
+		<Version>0.7.0</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
@@ -9,7 +9,7 @@
 	<PropertyGroup>
 		<Authors>alexalok</Authors>
 		<Description>App Store Server Notifications V2 for .NET</Description>
-		<Copyright>Copyright (c) alexalok 2022-2024</Copyright>
+		<Copyright>Copyright (c) alexalok 2022-2025</Copyright>
 		<PackageProjectUrl>https://github.com/alexalok/AppStoreServerNotificationsV2</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/alexalok/AppStoreServerNotificationsV2</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
@@ -17,7 +17,7 @@
 		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReleaseNotes>
-			* moved from System.IdentityModel.Tokens.Jwt to JWT
+			* add support for more fields in the payload
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

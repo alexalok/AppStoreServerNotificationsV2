@@ -83,5 +83,10 @@ public enum NotificationType
     /// <summary>
     /// A notification type that along with its subtype indicates that the notification is a test notification.
     /// </summary>
-    TEST
+    TEST,
+
+    /// <summary>
+    /// A notification type that indicates the App Store reversed a previously granted refund due to a dispute that the customer raised
+    /// </summary>
+    REFUND_REVERSED
 }

@@ -26,7 +26,8 @@ public class JWSRenewalInfoDecodedPayload_Tests
             "com.example.product",
             DateTimeOffset.FromUnixTimeMilliseconds(1624446641000),
             DateTimeOffset.FromUnixTimeMilliseconds(1624446641000), 
-            DateTimeOffset.FromUnixTimeMilliseconds(1624446641000)
+            DateTimeOffset.FromUnixTimeMilliseconds(1624446641000),
+            "fd12746f-2d3a-46c8-bff8-55b75ed06aca"
         );
 
         // Act
@@ -47,5 +48,6 @@ public class JWSRenewalInfoDecodedPayload_Tests
         Assert.Equal(expectedPayload.RecentSubscriptionStartDate, actualPayload.RecentSubscriptionStartDate);
         Assert.Equal(expectedPayload.RenewalDate, actualPayload.RenewalDate);
         Assert.Equal(expectedPayload.SignedDate, actualPayload.SignedDate);
+        Assert.Equal(expectedPayload.AppAccountToken, actualPayload.AppAccountToken);
     }
 }
